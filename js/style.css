@@ -54,6 +54,12 @@ input{
   color:white;
   outline: none;
 }
+.control button:hover{
+  border: solid 3px white;
+  background-color: rgba(8, 224, 206, 0.6);
+  border-radius: 50%;
+	transition: border-radius 0.5s;
+}
 #searchText{
   padding: 0 10px;
   width: 350px;

@@ -50,6 +50,7 @@ class Application {
     this.infoLocation = await this.geo.getInfoOnCoords(this.coords, this.language);
     this.infoWeatherNow = await this.weather.getWeatherByCoordsNow(this.coords, this.language, this.units);
     this.infoWeatherForTheNextThreeDays = await this.weather.getWeatherByCoordsForTheNextThreeDays(this.coords, this.language, this.units);
+    
     this.appearance.renderBaseStructure(this.infoLocation, this.infoWeatherNow, this.infoWeatherForTheNextThreeDays, this.language, this.units);
     this.map.renderMap(this.coords);
 
