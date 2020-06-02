@@ -1,0 +1,12 @@
+<svg  viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <pattern id="pattern2294" width="1511.811" height="1511.811" patternTransform="matrix(.26458333 0 0 .26458333 0 -103.00001)" patternUnits="userSpaceOnUse">
+   <image y="5.6843419e-14" width="1511.811" height="1511.811" preserveAspectRatio="none" xlink:href="https://i.stack.imgur.com/WTPbV.jpg "/>
+  </pattern>
+ </defs>
+  <g  fill="url(#pattern2294)" transform="scale(0.6)translate(0,110)">
+   <path d="m16.630952 154.125 26.080357 23.62351 0.377975 79.18601 104.8884-0.94494 17.57589 25.89136h-148.54464z" />
+   <path d="m243.03869-84.755952h146.27679l0.75594 127.75595-26.88216-22.476151-0.17556-80.020245-103.72204 0.06485z" fill="yellow"/>
+   <path d="m228.78271-74.504642 15.7689 25.390605h105.03692l-1.33633 79.913587 28.06329 22.450639v191.09771l-320.45616-0.26727v-318.58527l173.99246 0.534538z" />
+  </g>
+</svg>  

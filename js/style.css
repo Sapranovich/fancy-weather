@@ -15,7 +15,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   color:white;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./iconBtns1/wallpaper1.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./iconBtns1/wallpaper1.jpg');
   font-size: 20px;
 }
 input{
@@ -38,7 +38,7 @@ input{
   height: 80px;
   border-radius: 10px;
   padding-top: 18px;
-  background: rgba(0, 103, 95, 0.6);
+  background: transparent;
 }
 .control button{
   width: 40px;
@@ -76,7 +76,7 @@ input{
 .weather-data-now{
   width: 800px;
     height: 100%;
-    background: rgba(0, 103, 95, 0.6);
+    background: transparent;
     border-radius: 10px;
     text-align: center;
 }
@@ -125,15 +125,25 @@ input{
 .map-container{
   width: 580px;
     height: 100%;
-    background: rgba(0, 103, 95, 0.6);
+    background: transparent;
     border-radius: 10px;
     padding: 25px;
 }
-#map{
+#map {
+  width: 500px; 
   height: 300px;
-    width: 500px;
-    margin: 10px auto 0px;
-    border-radius: 20px;
+  background: #BDE2E0;
+  border-radius: 50%/10%;
+  position: relative;
+  margin: 10px auto 0px;
+  }
+.marker {
+  background-image: url('./iconBtns1/mapbox-icon.png');
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .coords-container{
   width: 500px;
@@ -152,7 +162,7 @@ input{
     width: 450px;
     display: flex;
     justify-content: space-around;
-    background: rgba(0, 103, 95, 0.6);
+    background: transparent;
     border-radius: 10px;
 }
 .add-info-icon{

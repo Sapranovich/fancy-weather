@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable semi */
 /* eslint-disable no-undef */
 class Map {
   constructor() {
@@ -16,6 +17,25 @@ class Map {
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [longitude, latitude],
       zoom: 10.5
+    });
+
+    let geojson = {
+      type: 'FeatureCollection',
+      features: [{
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [longitude, latitude]
+        }
+      }]
+    }
+    geojson.features.forEach((marker)=>{
+      let el = document.createElement('div');
+      el.className = 'marker';
+
+      new mapboxgl.Marker(el)
+        .setLngLat(marker.geometry.coordinates)
+        .addTo(this.map);
     });
   }
 }
