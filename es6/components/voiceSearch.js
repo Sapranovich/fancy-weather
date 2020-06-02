@@ -35,7 +35,6 @@ class VoiceSearch {
       document.querySelector('.voice-search-btn').classList.remove('active');
       switch (final_transcript) {
         case 'погода' || 'weather' || "надвор'е":
-          document.body.style.pointerEvents = 'none';
           VoiceSearch.speak(VoiceSearch.message(infoLocation, infoWeatherNow, language), language);
           break;
         default:
